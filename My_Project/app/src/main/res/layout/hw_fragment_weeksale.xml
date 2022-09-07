@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cash.HW_Weeksale">
+
+    <!--화면 구상-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+<!--        &lt;!&ndash;리사이클러 끝&ndash;&gt;-->
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:id="@+id/weekRecycle"/>-->
+            <FrameLayout
+
+                android:layout_weight="90"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/weekFrag" />
+        <!--리사이클러 끝-->
+
+    </LinearLayout>
+    <!--화면 자체 -->
+</FrameLayout>

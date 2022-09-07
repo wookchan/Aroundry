@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.project">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="camera"
+        android:required="true" /> <!-- API30이상에서는 queries사용해서 권한부여를 한번 더 해야함. -->
+    <queries>
+
+        <!-- WebView -->
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="http" />
+        </intent>
+
+        <!-- Camera -->
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+        <!-- Gallery -->
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT" />
+        </intent>
+        <!-- Youtube -->
+        <intent>
+            <action android:name="android.media.browse.MediaBrowserService" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label=""
+        android:preserveLegacyExternalStorage="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Project"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".PS_QRScannerActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".New_Detail"
+            android:exported="true" />
+        <activity
+            android:name=".Qrcode_Detail"
+            android:exported="true" />
+        <activity
+            android:name=".Money_Detail"
+            android:exported="true" />
+        <activity
+            android:name=".detail_pageActivity2"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyB0uOg0ZxuxWwm_UzzMJPJZnOPbSXaD0Wc" />
+
+        <activity
+            android:name=".Guide"
+            android:exported="true"/>
+
+        <activity
+            android:name=".kkbMainActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".LoadingActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity> <!-- http 라이브러리 사용 -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepath" />
+        </provider>
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+    </application>
+
+</manifest>

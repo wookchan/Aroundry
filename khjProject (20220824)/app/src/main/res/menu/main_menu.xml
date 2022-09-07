@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="공지사항"/>
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@android:drawable/ic_menu_gallery"
+            android:title="세탁 꿀팁"/>
+
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@android:drawable/ic_menu_slideshow"
+            android:title="도움말 / 문의"/>
+
+    </group>
+
+</menu>

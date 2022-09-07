@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="customer.mapper">
+
+<!-- 매출차트 -->
+<select id="graph" resultType="hashmap">
+<!--  
+select  sum(cost) cost, to_char(costdate, 'mm') month
+from storehistory 
+where storeid= #{storeid}
+and to_char(costdate, 'rrrr') = to_char(sysdate, 'rrrr')
+group by to_char(costdate, 'mm')
+order by month
+-->
+
+with mm as (
+select 0 "01", 0 "02", 0 "03", 0 "04", 0 "05", 0 "06"
+     , 0 "07", 0 "08", 0 "09", 0 "10", 0 "11", 0 "12"
+from dual
+)
+select month, nvl(zero + cost,0) cost from mm 
+unpivot ( zero for month IN ("01", "02", "03", "04", "05", "06"
+, "07", "08", "09", "10", "11", "12") ) m
+left outer join
+(select  sum(cost) cost, to_char(costdate, 'mm') month
+      from storehistory
+      where storeid= #{storeid}
+      and to_char(costdate, 'rrrr') = to_char(sysdate, 'rrrr')
+      group by to_char(costdate, 'mm')) c
+using(month)
+order by month
+</select>
+
+
+<!-- 고객이용정보 -->
+<select id="storelist" resultType="customer.CustomerVO">
+select *
+from store
+where ownerid = #{ownerid}
+</select>
+
+<!-- 고객매출조회 -->
+<select id='detail' resultType="customer.CustomerVO">
+select *
+from storehistory, userinfo
+where storeid=#{storeid}
+and  storehistory.userid = userinfo.userid
+order by costdate desc
+<!-- 
+select DISTINCT storehistory.*
+from store, storehistory
+where store.storeid = storehistory.storeid
+and ownerid=#{ownerid}
+ --></select>
+ 
+ <!-- 점주상세정보 -->
+ <select id='user' resultType="user.UserVO">
+select *
+from userinfo
+where userinfo.userid=#{userid}
+ </select>
+ 
+
+<!-- 매장정보상세조회 -->
+<select id='info' resultType="customer.CustomerVO">
+select *
+from store
+where store.storeid=#{storeid}
+<!-- select * from store where storeid in(select storeid from store where ownerid='"+hw+"')  -->
+</select>
+
+<!-- 매장이용고객정보상세조회 -->
+<!-- <select id="user" resultType="customer.UserVO">
+select userinfo.*
+from userinfo, storehistory
+where userinfo.userid = storehistory.userid
+</select>
+ -->
+
+
+
+</mapper>

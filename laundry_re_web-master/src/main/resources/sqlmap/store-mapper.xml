@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="store.mapper">
+
+<!-- 회원정보신규저장(회원가입) -->
+ <insert id='storejoin'>
+insert into store (location, address, ownerid, imageurl, f_cctv, f_game, f_toilet, f_concent, f_wifi, f_coin, machine, latitude, longitude, cost)
+values (#{location}, #{address}, #{ownerid}, #{imageurl, jdbcType=VARCHAR}, #{f_cctv} ,#{f_game} ,#{f_toilet} ,#{f_concent} ,#{f_wifi} ,#{f_coin} ,#{machine}
+,#{latitude},#{longitude},#{cost})
+</insert> 
+
+
+<update id="update">
+update store set location=#{location}, address=#{address}
+, imageurl=#{imageurl, jdbcType=VARCHAR}, f_cctv=#{f_cctv} ,f_game=#{f_game} 
+,f_toilet=#{f_toilet} ,f_concent=#{f_concent} ,f_wifi=#{f_wifi} ,f_coin=#{f_coin} ,machine=#{machine}
+,latitude=#{latitude},longitude=#{longitude},cost=#{cost}
+where storeid= #{storeid}
+</update>
+
+<delete id="delete">
+delete from store  where  storeid= #{storeid}
+</delete>
+
+<select id="info" resultType="store.StoreVO">
+select * from store where storeid=#{storeid}
+</select>
+<!-- 아이디중복확인(아이디존재여부) -->
+
+<!-- 비밀번호재발급시 salt, 암호화된 비밀번호 변경
+<update id="reset_password">
+update member set salt=#{salt}, salt_pw=#{salt_pw}
+where id=#{id}
+</update>
+ -->
+<!-- 회원id의 salt조회
+<select id="salt" resultType='String'>
+select salt from member where id=#{id}
+</select> -->
+
+<!-- 로그인
+<select id="login" resultType="member.MemberVO">
+select * from member
+where id=#{id} and salt_pw=#{pw}
+</select> -->
+</mapper>

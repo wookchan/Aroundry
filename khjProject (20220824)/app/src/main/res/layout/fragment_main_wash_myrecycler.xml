@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:weightSum="200">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+
+        android:weightSum="20">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="남은 포인트"/>
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="16"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- 당기면 리프레쉬 하기 -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipemy"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="180">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mainWashMyRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

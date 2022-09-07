@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="horizontal"
+
+        android:weightSum="2">
+
+        <Spinner
+            android:id="@+id/spiner_gu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"/>
+
+        <Spinner
+            android:id="@+id/spiner_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+
+        android:weightSum="20">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="장소"/>
+
+        <TextView
+            android:id="@+id/tv_place"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="16"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+
+        android:weightSum="20">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="남은 포인트"/>
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="16"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- 당기면 리프레쉬 하기 -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeall"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="86">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mainWashRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"            />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

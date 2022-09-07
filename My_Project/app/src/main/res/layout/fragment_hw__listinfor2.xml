@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Adapter.Setak.HW_Listinfor2">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/listinfro2_titlelocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="머머 점"
+        android:textSize="24sp" />
+    <LinearLayout
+        android:layout_marginTop="65dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listinfor2_recycler"/>
+
+    </LinearLayout>
+
+</FrameLayout>

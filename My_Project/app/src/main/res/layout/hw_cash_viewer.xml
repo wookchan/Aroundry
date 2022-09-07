@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="5dp">
+
+        <LinearLayout
+            android:id="@+id/cashparents"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <!--위 선-->
+            <View
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#AFC3C3C3"/>
+            <!-- 선 끝-->
+
+            <!--매출 -->
+            <LinearLayout
+                android:layout_weight="30"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <!-- 일수 적힐곳-->
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_gravity="left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:textSize="16sp"
+                        android:id="@+id/cashcurdate"
+                        android:text=""
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_gravity="left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:textSize="14sp"
+                        android:id="@+id/cashdate"
+                        android:text=""/>
+
+
+                </LinearLayout>
+                <!--일수 끝 -->
+
+                <!--액수 적힐곳-->
+                <TextView
+                    android:id="@+id/cashcur"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:layout_gravity="right"
+                    android:textSize="28sp"
+                />
+
+
+                <!--액수-->
+            </LinearLayout>
+            <!-- 매출 -->
+
+            <!--그래프 영역-->
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_marginTop="50dp"
+                android:layout_weight="55"
+                android:id="@+id/costchart"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                />
+
+            <!--끝 선-->
+            <View
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#AFC3C3C3"/>
+            <!-- 끝 선끝-->
+
+            <!--총 액수 적힐곳-->
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/cashlastcost"
+                android:layout_weight="9"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

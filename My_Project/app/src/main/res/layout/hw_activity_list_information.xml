@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Adapter.Setak.HW_Listinformation">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:layout_marginRight="50dp"
+            android:id="@+id/setakinfor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="정보"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/setakinfor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="세탁기 "
+            android:textSize="24sp" />
+
+    </LinearLayout>
+    <!-- FF(16진수 자리를 넣으면 투명도가 생김)
+    투명도도 넣기 :: android:background="#FF000000"
+    출처: https://pimi.tistory.com/5 [피미:티스토리]-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:layout_weight="1"
+            android:id="@+id/clickcontain"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp">
+        </FrameLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

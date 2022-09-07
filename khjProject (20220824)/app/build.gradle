@@ -1,0 +1,97 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.example.project"
+        minSdk 23
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    useLibrary 'org.apache.http.legacy'
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    /* http 사용하는 라이브러리 */
+    useLibrary 'org.apache.http.legacy'
+
+
+
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-crashlytics-buildtools:2.9.1'
+    implementation 'com.google.ar.sceneform:filament-android:1.17.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation 'com.android.support:design:31.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.maps.android:android-maps-utils:0.6.1'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.android.support:cardview-v7:31.0.0'
+
+    // 네이버 로그인용 API
+    implementation 'com.navercorp.nid:oauth-jdk8:5.1.0' // jdk 8
+    // 코틀린 오픈안되서 추가 API 네이버로그인에서 사용.
+    implementation group: 'org.jetbrains.kotlinx', name: 'kotlinx-coroutines-core', version: '1.5.2', ext: 'pom'
+
+
+    /* 안드로이드와 통신할수 있는 버전 가져오기 :  dependencies안에*/
+    implementation group: 'org.apache.httpcomponents', name: 'httpclient-android', version: '4.3.5.1'
+    implementation('org.apache.httpcomponents:httpmime:4.3') {
+        exclude module: "httpclient"
+    }
+
+    // Glide : 이미지 원형으로 만들기
+    // Glide
+    //    .with(액티비티) => 액티비티, myFragment
+    //    .load(url) => drawable안에 이미지, url상의 이미지
+    //    .circleCrop() => 원형으로 만들어줌
+    //    .placeholder(R.drawable.loading_spinner) => 이미지가 로딩될때까지 초기 이미지
+    //    .into(myImageView);  => 이미지를 넣을 이미지뷰
+    implementation 'com.github.bumptech.glide:glide:4.13.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
+
+    // 구글맵 사용
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
+
+    // youtube jar 파일
+    implementation files('D:/Study_Android/contents/YouTubeAndroidPlayerApi-1.2.2/libs/YouTubeAndroidPlayerApi.jar')
+
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+
+}

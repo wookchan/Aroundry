@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:id="@+id/containheader"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="355dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="28dp"
+            android:gravity="center"
+            android:text="사용가이드"
+            android:textColor="#090909"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/containPicture"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7">
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youTubePlayerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+   <!-- <Button
+        android:id="@+id/youtubeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="play!"
+        android:textColor="#000000"
+        android:layout_gravity="center"/>-->
+
+    </FrameLayout>
+    <RelativeLayout
+        android:id="@+id/containLocation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.25">
+
+        <TextView
+            android:id="@+id/TVaram"
+            android:layout_width="373dp"
+            android:layout_height="34dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="264dp"
+            android:text="7.세탁이 끝나면 자동으로 알람이 갑니다"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/TVstart"
+            android:layout_width="373dp"
+            android:layout_height="34dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="229dp"
+            android:text="6.시작버튼을 눌러주세요"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/TVmode"
+            android:layout_width="373dp"
+            android:layout_height="34dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="195dp"
+            android:text="5.모드를 선택해주세요"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/TVon"
+            android:layout_width="373dp"
+            android:layout_height="34dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="160dp"
+            android:text="4.전원을 켜 주세요"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/TVactz"
+            android:layout_width="373dp"
+            android:layout_height="34dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="125dp"
+            android:text="3.세제와 섬유유연제를 넣어주세요"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/TVlaundry"
+            android:layout_width="373dp"
+            android:layout_height="34dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="89dp"
+            android:text="2.세탁물을 넣어주세요"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/TVopen"
+            android:layout_width="373dp"
+            android:layout_height="34dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="55dp"
+            android:text="1.세탁기를 열어주세요"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="225dp"
+        android:layout_height="353dp"
+        android:layout_below="@+id/txtlocation"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="53dp"
+        app:srcCompat="@drawable/machine" />
+
+    <TextView
+        android:id="@+id/txtlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="58dp"
+        android:text="세탁물 현황"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="29dp"
+        android:text="사용 가이드" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="15dp"
+        android:text="00:00:00" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="37dp"
+        android:layout_height="53dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="41dp"
+        app:srcCompat="@drawable/file" />
+
+    <Button
+        android:id="@+id/guidebt"
+        android:background="#00ff0000"
+        android:layout_width="37dp"
+        android:layout_height="53dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="43dp"
+        android:text="" />
+
+</RelativeLayout>

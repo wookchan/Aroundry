@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.HW_PresidentFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="10">
+
+            <TextView
+                android:layout_marginLeft="0dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:text="마이 페이지"
+                android:textSize="24sp" />
+
+            <!--<ImageView
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hambugur"
+                />-->
+
+        </LinearLayout>
+        <!--마이페이지~ 버거 메뉴(10)-->
+        <LinearLayout
+            android:layout_weight="20"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:id="@+id/president_profile"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+               <!-- android:src="@drawable/man"-->
+
+
+            <TextView
+                android:id="@+id/president_user"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="사용자 이름" />
+
+
+
+        </LinearLayout>
+        <!-- 100-10(20) -->
+        <LinearLayout
+            android:layout_weight="6"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            />
+
+        <LinearLayout
+            android:weightSum="10"
+            android:layout_weight="12"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+            <ImageView
+                android:layout_marginLeft="100dp"
+                android:layout_gravity="right"
+                android:layout_weight="2"
+                android:src="@drawable/pin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/president_notice"
+                android:gravity="center"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="공지사항"/>
+
+        </LinearLayout>
+        <!--100-26(12)-->
+        <LinearLayout
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            />
+        <LinearLayout
+            android:weightSum="10"
+            android:layout_weight="12"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+            <ImageView
+                android:layout_marginLeft="100dp"
+                android:layout_gravity="right"
+                android:layout_weight="2"
+                android:src="@drawable/document"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/president_chpw"
+                android:gravity="center"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="암호 변경"/>
+
+        </LinearLayout>
+        <!--100-38(12)-->
+        <LinearLayout
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            />
+        <LinearLayout
+            android:weightSum="10"
+            android:layout_weight="12"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+            <ImageView
+                android:layout_marginLeft="100dp"
+                android:layout_gravity="right"
+                android:layout_weight="2"
+                android:src="@drawable/disapperping"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/president_chph"
+                android:gravity="center"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="번호 변경"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            />
+        <!--100-50(12)-->
+        <!--<LinearLayout
+            android:weightSum="10"
+            android:layout_weight="12"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+            <ImageView
+                android:layout_marginLeft="100dp"
+                android:layout_gravity="right"
+                android:layout_weight="2"
+                android:src="@drawable/letter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+
+                android:gravity="center"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="문의하기"/>
+
+        </LinearLayout>-->
+        <!--100-62(12) = 26-->
+    </LinearLayout>
+
+</FrameLayout>

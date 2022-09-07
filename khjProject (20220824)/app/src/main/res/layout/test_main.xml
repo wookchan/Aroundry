@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <!-- actionBar를 생성 -->
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/design_default_color_primary"
+                android:elevation="1dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+                <TextView
+                    android:id="@+id/titleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="타이틀"
+                    android:textAppearance="@style/Widget.AppCompat.ActionBar.TabBar"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp"/>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <!-- 탭이 들어갈 자리 생성 : 동적으로 넣음 -->
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_light_background"
+                android:elevation="1dp"
+                app:tabGravity="fill"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="#0B67B1"
+                app:tabTextColor="#4EAAF4"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <!-- 프래그먼트가 들어갈 자리 생성 -->
+        <FrameLayout
+            android:id="@+id/contain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        </FrameLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

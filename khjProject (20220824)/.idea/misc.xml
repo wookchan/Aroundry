@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/ATeam/khjProject (20220823)/app/src/main/res/layout/fragment_main_wash_allrecycler.xml" value="0.18796296296296297" />
+        <entry key="..\:/ATeam/khjProject (20220823)/app/src/main/res/layout/fragment_main_wash_myrecycler.xml" value="0.1" />
+        <entry key="..\:/ATeam/khjProject (20220823)/app/src/main/res/layout/ps_fragment2.xml" value="0.14114583333333333" />
+        <entry key="..\:/ATeam/khjProject (20220824)/app/src/main/res/layout/fragment_main_menu_map.xml" value="0.19537037037037036" />
+        <entry key="..\:/ATeam/khjProject (20220824)/app/src/main/res/layout/fragment_main_menu_mypage.xml" value="0.25" />
+        <entry key="..\:/ATeam/khjProject (20220824)/app/src/main/res/layout/fragment_main_mywash_item.xml" value="0.25" />
+        <entry key="..\:/ATeam/khjProject (20220824)/app/src/main/res/layout/fragment_main_wash_myrecycler.xml" value="0.175" />
+        <entry key="..\:/ATeam/khjProject (20220824)/app/src/main/res/layout/ps_fragment1.xml" value="0.14114583333333333" />
+        <entry key="..\:/ATeam/khjProject (20220824)/app/src/main/res/layout/ps_sch_example_item.xml" value="0.33" />
+        <entry key="..\:/Study_Android/Project/app/src/main/res/drawable/menu_item_color.xml" value="0.1" />
+        <entry key="..\:/Study_Android/Project/app/src/main/res/layout/activity_detail_page2.xml" value="0.2171875" />
+        <entry key="..\:/Study_Android/Project/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/Study_Android/Project/app/src/main/res/layout/activity_map.xml" value="0.25" />
+        <entry key="..\:/Study_Android/Project/app/src/main/res/layout/activity_money_detail.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/Project/app/src/main/res/layout/activity_my_page.xml" value="0.3651041666666667" />
+        <entry key="..\:/Study_Android/Project/app/src/main/res/layout/activity_new_detail.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/Project/app/src/main/res/layout/activity_new_fragment.xml" value="0.1875" />
+        <entry key="..\:/Study_Android/Project/app/src/main/res/layout/activity_qrcode_detail.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/Project/app/src/main/res/layout/activity_vdao.xml" value="0.18645833333333334" />
+        <entry key="..\:/Study_Android/Project/app/src/main/res/layout/content_main.xml" value="0.1" />
+        <entry key="..\:/Study_Android/Project/app/src/main/res/layout/fragment_detail_map.xml" value="0.21614583333333334" />
+        <entry key="..\:/Study_Android/Project/app/src/main/res/layout/fragment_find.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/Project/app/src/main/res/layout/fragment_main_menu_chart.xml" value="0.1" />
+        <entry key="..\:/Study_Android/Project/app/src/main/res/layout/fragment_main_menu_home.xml" value="0.1" />
+        <entry key="..\:/Study_Android/Project/app/src/main/res/layout/fragment_main_menu_map.xml" value="0.22" />
+        <entry key="..\:/Study_Android/Project/app/src/main/res/layout/fragment_main_menu_mypage.xml" value="0.33" />
+        <entry key="..\:/Study_Android/Project/app/src/main/res/layout/fragment_main_menu_wash.xml" value="0.1" />
+        <entry key="..\:/Study_Android/Project/app/src/main/res/layout/fragment_money.xml" value="0.3651041666666667" />
+        <entry key="..\:/Study_Android/Project/app/src/main/res/layout/fragment_name.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/Project/app/src/main/res/layout/fragment_new.xml" value="0.1875" />
+        <entry key="..\:/Study_Android/Project/app/src/main/res/layout/fragment_search.xml" value="0.1" />
+        <entry key="..\:/Study_Android/Project/app/src/main/res/layout/fragment_view.xml" value="0.2462962962962963" />
+        <entry key="..\:/Study_Android/Project/app/src/main/res/menu/main_menu_bottom.xml" value="0.1" />
+        <entry key="..\:/Study_Android/khjProject (20220818)/app/src/main/res/layout/activity_fragment_clickwash.xml" value="0.18645833333333334" />
+        <entry key="..\:/Study_Android/khjProject (20220818)/app/src/main/res/layout/fragment_main_menu_wash.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/khjProject (20220818)/app/src/main/res/layout/fragment_main_mywash_item.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/khjProject (20220818)/app/src/main/res/layout/fragment_main_wash_allmachine.xml" value="0.3398148148148148" />
+        <entry key="..\:/Study_Android/khjProject (20220818)/app/src/main/res/layout/fragment_main_wash_allrecycler.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/khjProject (20220818)/app/src/main/res/layout/fragment_main_wash_item.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/khjProject (20220818)/app/src/main/res/layout/fragment_main_wash_myrecycler.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/khjProject (20220818)/app/src/main/res/layout/ps_fragment1.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/khjProject (20220818)/app/src/main/res/layout/ps_sch_activity_main.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/khjProject (20220824)/app/src/main/res/layout/activity_loading.xml" value="0.5" />
+        <entry key="..\:/Study_Android/khjProject (20220824)/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Study_Android/khjProject (20220824)/app/src/main/res/layout/loadingactivity.xml" value="0.20416666666666666" />
+        <entry key="..\:/Study_Android/khjProject/app/src/main/res/drawable/menu_item_color.xml" value="0.1945" />
+        <entry key="..\:/Study_Android/khjProject/app/src/main/res/layout/activity_fragment_clickwash.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/khjProject/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Study_Android/khjProject/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/khjProject/app/src/main/res/layout/activity_scanner.xml" value="0.221875" />
+        <entry key="..\:/Study_Android/khjProject/app/src/main/res/layout/burger_activity_sub.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/khjProject/app/src/main/res/layout/burger_nav_header_main.xml" value="0.2838541666666667" />
+        <entry key="..\:/Study_Android/khjProject/app/src/main/res/layout/fragment_main_menu_home.xml" value="0.1875" />
+        <entry key="..\:/Study_Android/khjProject/app/src/main/res/layout/fragment_main_menu_map.xml" value="0.1875" />
+        <entry key="..\:/Study_Android/khjProject/app/src/main/res/layout/fragment_main_menu_mypage.xml" value="0.2" />
+        <entry key="..\:/Study_Android/khjProject/app/src/main/res/layout/fragment_main_menu_wash.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/khjProject/app/src/main/res/layout/guide_fragment.xml" value="0.3619791666666667" />
+        <entry key="..\:/Study_Android/khjProject/app/src/main/res/layout/kkbactivity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/khjProject/app/src/main/res/layout/kkbfragment_clicklocation.xml" value="0.1890625" />
+        <entry key="..\:/Study_Android/khjProject/app/src/main/res/layout/kkbframe_1p.xml" value="0.1890625" />
+        <entry key="..\:/Study_Android/khjProject/app/src/main/res/layout/kkbframe_2p.xml" value="0.1890625" />
+        <entry key="..\:/Study_Android/khjProject/app/src/main/res/layout/kkbframe_4p.xml" value="0.24114583333333334" />
+        <entry key="..\:/Study_Android/khjProject/app/src/main/res/layout/ps_fragment1.xml" value="0.22" />
+        <entry key="..\:/Study_Android/khjProject/app/src/main/res/layout/ps_fragment2.xml" value="0.14947916666666666" />
+        <entry key="..\:/Study_Android/khjProject/app/src/main/res/layout/ps_sch_activity_main.xml" value="0.33" />
+        <entry key="..\:/Study_Android/khjProject/app/src/main/res/layout/ps_sch_example_item.xml" value="0.1890625" />
+        <entry key="..\:/Study_Android/khjProject/app/src/main/res/layout/test_main.xml" value="0.1890625" />
+        <entry key="..\:/Study_Android/khjProject/app/src/main/res/layout/trash1.xml" value="0.36614583333333334" />
+        <entry key="..\:/Study_Android/khjProject/app/src/main/res/menu/main_menu.xml" value="0.1890625" />
+        <entry key="..\:/Study_Android/khjProject/app/src/main/res/menu/main_menu_bottom.xml" value="0.1875" />
+        <entry key="..\:/Users/admin/Desktop/Sum/khjProject (20220824)/app/src/main/res/layout/activity_fragment_clickwash.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/admin/Desktop/Sum/khjProject (20220824)/app/src/main/res/layout/fragment_main_clickwash_item.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/admin/Desktop/Sum/khjProject (20220824)/app/src/main/res/layout/fragment_main_menu_washxxx.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/admin/Desktop/Sum/khjProject (20220824)/app/src/main/res/layout/fragment_main_mywash_item.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/admin/Desktop/Sum/khjProject (20220824)/app/src/main/res/layout/fragment_main_wash_item.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/admin/Desktop/Sum/khjProject (20220824)/app/src/main/res/layout/ps_sch_example_item.xml" value="0.38645833333333335" />
+        <entry key="..\:/Users/admin/Desktop/khjProject (20220817)/app/src/main/res/layout/kkbfragment_clicklocation.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/admin/Desktop/khjProject (20220817)/app/src/main/res/layout/ps_fragment1.xml" value="0.26614583333333336" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,459 @@
+@charset "UTF-8";
+
+/* ===========================
+--- Third Section
+============================ */
+section.third .cts {
+  position: relative;
+  padding-top: 216px;
+  text-align: left;
+}
+section.third .cts h1 {
+  margin: 0px 0px 16px;
+  font-family: "october9_3";
+  color: #354d1e;
+  font-size: 28px;
+  font-weight: 100;
+}
+section.third .cts h2 {
+  margin: 0px 0px 32px;
+  font-family: "pinetreeL";
+  color: #546247;
+  font-size: 22px;
+  font-weight: 100;
+}
+section.third .element {
+  position: absolute;
+  bottom: 72px;
+  right: 50%;
+  margin-right: -492px;
+  width: 424px;
+  height: 388px;
+  background: url(../images/element_03.png);
+  background-size: cover;
+}
+@media (max-width: 1919px) {
+  section.third .cts {
+    padding-top: 128px;
+  }
+  section.third .cts h1 {
+    font-size: 24px;
+  }
+  section.third .cts h2 {
+    font-size: 20px;
+  }
+  section.third .element {
+    width: 382px;
+    height: 360px;
+  }
+}
+@media (max-width: 1023px) {
+  section.third .cts {
+    padding-top: 200px;
+  }
+  section.third .element {
+    bottom: 124px;
+    margin-right: -400px;
+    width: 333px;
+    height: 312px;
+  }
+}
+@media (max-width: 767px) {
+  section.third .cts {
+    padding-top: 116px;
+  }
+  section.third .cts h1 {
+    margin: 0px 0px 12px;
+    font-size: 20px;
+  }
+  section.third .cts h2 {
+    margin: 0px 0px 16px;
+    font-size: 17px;
+  }
+  section.third .element {
+    bottom: 64px;
+    margin-right: -228px;
+    width: 274px;
+    height: 258px;
+  }
+}
+
+/* ===========================
+--- Second Section
+============================ */
+section.second .cts {
+  position: relative;
+  padding-top: 216px;
+  text-align: left;
+}
+section.second .cts h1 {
+  margin: 0px 0px 16px;
+  font-family: "october9_3";
+  color: #354d1e;
+  font-size: 28px;
+  font-weight: 100;
+}
+section.second .cts h2 {
+  margin: 0px 0px 32px;
+  font-family: "pinetreeL";
+  color: #546247;
+  font-size: 22px;
+  font-weight: 100;
+}
+section.second .element {
+  position: absolute;
+  bottom: 28px;
+  right: 50%;
+  margin-right: -408px;
+  width: 402px;
+  height: 322px;
+  background: url(../images/element_02.png);
+  background-size: cover;
+}
+@media (max-width: 1919px) {
+  section.second .cts {
+    padding-top: 128px;
+  }
+  section.second .cts h1 {
+    font-size: 24px;
+  }
+  section.second .cts h2 {
+    font-size: 20px;
+  }
+  section.second .element {
+    width: 396px;
+    height: 318px;
+  }
+}
+@media (max-width: 1023px) {
+  section.second .cts {
+    padding-top: 200px;
+  }
+  section.second .element {
+    bottom: 148px;
+    margin-right: -340px;
+    width: 343px;
+    height: 275px;
+  }
+}
+@media (max-width: 767px) {
+  section.second .cts {
+    padding-top: 116px;
+  }
+  section.second .cts h1 {
+    margin: 0px 0px 12px;
+    font-size: 20px;
+  }
+  section.second .cts h2 {
+    margin: 0px 0px 16px;
+    font-size: 17px;
+  }
+  section.second .element {
+    bottom: 56px;
+    margin-right: -162px;
+    width: 262px;
+    height: 213px;
+  }
+}
+
+/* ===========================
+--- Firsts Section
+============================ */
+section.first .cts {
+  position: relative;
+  padding-top: 216px;
+  text-align: left;
+}
+section.first .cts h1 {
+  margin: 0px 0px 16px;
+  font-family: "october9_3";
+  color: #354d1e;
+  font-size: 28px;
+  font-weight: 100;
+}
+section.first .cts h2 {
+  margin: 0px 0px 32px;
+  font-family: "pinetreeL";
+  color: #546247;
+  font-size: 22px;
+  font-weight: 100;
+}
+section.first .element {
+  position: absolute;
+  bottom: 0px;
+  right: 50%;
+  margin-right: -618px;
+  width: 652px;
+  height: 400px;
+  background-image: url(../images/element_01.png);
+  background-size: cover;
+}
+@media (max-width: 1919px) {
+  section.first .cts {
+    padding-top: 128px;
+  }
+  section.first .cts h1 {
+    font-size: 24px;
+  }
+  section.first .cts h2 {
+    font-size: 20px;
+  }
+  section.first .element {
+    margin-right: -618px;
+    width: 625px;
+    height: 384px;
+  }
+}
+@media (max-width: 1023px) {
+  section.first .cts {
+    padding-top: 200px;
+  }
+  section.first .element {
+    bottom: 112px;
+    margin-right: -522px;
+    width: 534px;
+    height: 328px;
+  }
+}
+@media (max-width: 767px) {
+  section.first .cts {
+    padding-top: 116px;
+  }
+  section.first .cts h1 {
+    margin: 0px 0px 12px;
+    font-size: 20px;
+  }
+  section.first .cts h2 {
+    margin: 0px 0px 16px;
+    font-size: 17px;
+  }
+  section.first .element {
+    bottom: 0px;
+    margin-right: -328px;
+    width: 426px;
+    height: 262px;
+  }
+}
+
+/* ===========================
+--- Intro
+============================ */
+section.intro .inner_wrap {
+  display: table;
+}
+section.intro .cts {
+  display: table-cell;
+  position: relative;
+  vertical-align: middle;
+  padding-top: 64px;
+}
+section.intro .cts h1 {
+  margin: 0 0 12px;
+  font-family: "october9_4";
+  color: #18210f;
+  font-size: 26px;
+  font-weight: 100;
+}
+section.intro .cts h2 {
+  margin: 0 0 32px;
+  font-family: "pinetreeL";
+  color: #546247;
+  font-size: 20px;
+  font-weight: 100;
+}
+section.intro .cts .logo_title {
+  width: 320px;
+  height: 313px;
+  margin: 0px auto 32px;
+  background: url(../images/logo_big.png);
+  background-size: cover;
+}
+section.intro .cts .download_group {
+  margin: auto;
+  font-size: 0px;
+}
+section.intro .cts .download_group button {
+  margin-right: 16px;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 40px;
+  background: #ffffff;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 0 0 1px #e2e2e2 inset;
+}
+
+section.intro .cts .download_group button:hover {
+  box-shadow: 0 0 0 3px #a5e022 inset;
+}
+section.intro .cts .download_group button:last-child {
+  margin-right: 0px;
+}
+section.intro .cts .download_group button img {
+  width: 116px;
+  height: auto;
+}
+section.intro .element {
+  position: absolute;
+  background-size: cover;
+  background-image: url(../images/indeximage.jpg);
+}
+section.intro .element.headphone {
+  width: 974px;
+  height: 746px;
+  bottom: -204px;
+  right: 50%;
+  margin-right: 104px;
+  background-image: url(../images/s.jpg);
+}
+section.intro .element.note {
+  width: 814px;
+  height: 952px;
+  bottom: -52px;
+  right: 50%;
+  margin-right: 652px;
+  background-image: url(../images/element_intro_note.png);
+}
+section.intro .element.pencil {
+  width: 306px;
+  height: 252px;
+  bottom: 176px;
+  left: 50%;
+  margin-left: 340px;
+  background-image: url(../images/element_intro_pencil.png);
+}
+section.intro .element.pencilcase {
+  width: 878px;
+  height: 484px;
+  bottom: -20px;
+  left: 50%;
+  margin-left: 496px;
+  background-image: url(../images/element_intro_pencilcase.png);
+}
+@media (max-width: 1279px) {
+  section.intro .cts {
+    padding-top: 40px;
+  }
+  section.intro .cts .logo_title {
+    width: 320px;
+    height: 313px;
+    margin: 0px auto 16px;
+  }
+  section.intro .cts h1 {
+    font-size: 24px;
+  }
+  section.intro .cts h2 {
+    font-size: 20px;
+  }
+  section.intro .cts .download_group button {
+    padding: 6px 24px;
+  }
+  section.intro .cts .download_group button img {
+    width: 112px;
+  }
+  section.intro .element.headphone {
+    width: 680px;
+    height: 520px;
+    bottom: -140px;
+    margin-right: 32px;
+  }
+  section.intro .element.note {
+    width: 580px;
+    height: 678px;
+    top: 48px;
+    margin-right: 322px;
+  }
+  section.intro .element.pencil {
+    width: 227px;
+    height: 186px;
+    bottom: 124px;
+    margin-left: 210px;
+  }
+  section.intro .element.pencilcase {
+    width: 563px;
+    height: 301px;
+    bottom: 12px;
+    margin-left: 296px;
+  }
+}
+@media (max-width: 1023px) {
+  section.intro .element.headphone {
+    width: 470px;
+    height: 360px;
+    bottom: -142px;
+    margin-right: -24px;
+  }
+  section.intro .element.note {
+    width: 388px;
+    height: 456px;
+    top: auto;
+    bottom: -108px;
+    margin-right: 252px;
+  }
+  section.intro .element.pencil {
+    width: 162px;
+    height: 131px;
+    bottom: 88px;
+    margin-left: 92px;
+  }
+  section.intro .element.pencilcase {
+    width: 399px;
+    height: 214px;
+    bottom: 16px;
+    margin-left: 152px;
+  }
+}
+@media (max-width: 767px) {
+  section.intro .cts .logo_title {
+    width: 320px;
+    height: 313px;
+    margin: 0px auto 16px;
+  }
+  section.intro .cts h1 {
+    font-size: 21px;
+  }
+  section.intro .cts h2 {
+    font-size: 17px;
+  }
+  section.intro .cts .download_group button {
+    margin-right: 8px;
+    padding: 6px 16px;
+  }
+  section.intro .cts .download_group button img {
+    width: 96px;
+  }
+  section.intro .element.headphone {
+    width: 364px;
+    height: 284px;
+    bottom: -142px;
+    margin-right: -128px;
+  }
+  section.intro .element.note {
+    width: 298px;
+    height: 348px;
+    top: auto;
+    bottom: -106px;
+    margin-right: 118px;
+  }
+  section.intro .element.pencil {
+    width: 121px;
+    height: 100px;
+    bottom: 52px;
+    margin-left: 44px;
+  }
+  section.intro .element.pencilcase {
+    width: 306px;
+    height: 164px;
+    bottom: -8px;
+    margin-left: 98px;
+  }
+}
+@media (max-width: 360px) {
+  section.intro .cts h1 {
+    font-size: 24px;
+  }
+  section.intro .cts .logo_title {
+    width: 96px;
+    height: 149px;
+  }
+}

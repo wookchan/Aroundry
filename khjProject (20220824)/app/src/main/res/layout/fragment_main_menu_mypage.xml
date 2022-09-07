@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/draw_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+    <!-- 메인화면 -->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- ActionBar -->
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat">
+            <!-- toolbar -->
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/Widget.AppCompat.Toolbar">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="20sp" />
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+        <!-- 프래그먼트를 넣을 공간 -->
+        <FrameLayout
+            android:id="@+id/contain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenuMypageFragment"
+
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="마이 페이지"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:layout_weight="8"
+        android:layout_marginTop="5dp"/>
+
+
+    <!--사용자 이름 레이아웃-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="10"
+        android:weightSum="10"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/page_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@android:color/transparent"
+            android:scaleType="center"
+            android:src="@drawable/person" />
+        <TextView
+            android:id="@+id/page_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="TextView"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+    <!--중간 레이아웃-->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="40"
+            android:weightSum="40">
+        <!--잔여금액 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="13"
+            android:weightSum="5"
+            >
+
+            <ImageView
+                android:id="@+id/page_money1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="center"
+                android:src="@drawable/money" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/page_money3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="잔여 금액"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:gravity="center_vertical"
+                    android:id="@+id/page_money2"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--QR코드 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="13"
+            android:weightSum="5"
+            >
+
+            <ImageView
+                android:id="@+id/page_qrcode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="center"
+                android:src="@drawable/qrcode" />
+            <TextView
+                android:id="@+id/page_qrcode2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:text="QR코드"
+                android:textSize="15dp"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+        <!--최근이용 내역 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="13"
+            android:weightSum="5"
+            >
+
+            <ImageView
+                android:id="@+id/page_new"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="center"
+                android:src="@drawable/clock"
+                 />
+            <TextView
+                android:id="@+id/page_new2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:text="최근이용 내역"
+                android:textSize="15dp"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="10">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="10"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/page_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:src="@drawable/cleaning"
+            android:gravity="center_vertical"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/burger_nav_header_main"
+        app:menu="@menu/main_menu"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+

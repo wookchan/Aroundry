@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Adapter.Setak.HW_Listinfor1">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/listinfor1_titleimg"
+            android:layout_weight="15"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:maxWidth="250dp"
+            android:maxHeight="200dp"
+        />
+       <!--세탁기 사진-->
+
+       <LinearLayout
+           android:layout_marginTop="10dp"
+           android:layout_gravity="center"
+           android:layout_weight="10"
+           android:layout_width="wrap_content"
+           android:layout_height="0dp"
+           android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/listinfor1_titlelocation"
+               android:text="기재 될곳"
+               android:textSize="16sp"/>
+            <!--장소 ~~ 서구청점-->
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_marginTop="10dp"
+           android:layout_weight="15"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:orientation="horizontal"
+           >
+
+           <!--위치 줄 광주광역시 머시ㅣ-->
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_marginLeft="50dp"
+               android:src="@drawable/loca" />
+           <TextView
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:id="@+id/listinfor1_location"
+               android:layout_marginLeft="10dp"
+               android:textSize="16sp"
+               android:text="자세한 장소"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_marginTop="10dp"
+           android:layout_weight="15"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:orientation="horizontal">
+           <!--운영시간-->
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_marginLeft="50dp"
+               android:src="@drawable/clock" />
+
+           <TextView
+               android:textSize="16sp"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:layout_marginLeft="10dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="운영시간 : 0시 ~ 24시 / 연중 무휴 "/>
+        </LinearLayout>
+
+       <LinearLayout
+           android:layout_marginTop="10dp"
+           android:layout_weight="15"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:orientation="horizontal">
+           <!--편의 시설-->
+           <ImageView
+               android:layout_marginLeft="50dp"
+               android:src="@drawable/plus"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"/>
+
+           <TextView
+               android:textSize="16sp"
+               android:layout_marginLeft="10dp"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:text="편의 시설"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_marginTop="15dp"
+           android:layout_weight="20"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:orientation="horizontal">
+            <FrameLayout
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listinfor1_contain">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/listinfor1_recycler">
+
+
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+            </FrameLayout>
+
+       </LinearLayout>
+   </LinearLayout>
+
+</FrameLayout>
